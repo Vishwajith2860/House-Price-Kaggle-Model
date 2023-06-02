@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles_saloni.css') }}">
+    <title>Housify</title>
+    <!--CSS-->
+    <link rel="icon" href="static/images/home.png" type="image/icon type">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header> Housify</header>
+
+    <section class="text small">
+       Housify is currently a small scale project for predicting the price of a house with a higher accuracy. <br>
+       To predict the price you need to fill certain specifications/attributes. <br>
+       These requirements are --->
+       <ul class="list-group">
+            <li class="list-group-item">OverallQual</li>
+            <li class="list-group-item">Year built Type</li>
+            <li class="list-group-item">Total Bsmt SF</li>
+            <li class="list-group-item">Full Bath</li>
+            <li class="list-group-item">TotRmsAbvGrd</li>
+            <li class="list-group-item">GarageCars</li>
+            <li class="list-group-item">BSmntFinType1</li>
+            <li class="list-group-item">BSmntFinType2</li>
+            <li class="list-group-item">MS Zonning</li>
+            <li class="list-group-item">Street</li>
+
+        </ul>
+    </section>
+    <div class="btns">
+        <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'index_saloni.html';">Home
+        </button>
+        <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'prediction.html';"> Make Predictions </button>
+        <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'contact.html';"> Contact </button>
+    </div>
+
+<!--    <footer>-->
+<!--        <p>@copyright2024</p>-->
+<!--    </footer>-->
+
+</body>
+
+</html>

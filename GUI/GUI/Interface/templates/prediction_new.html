@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles_saloni.css') }}">
+    <title>Housify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+    <!--CSS-->
+    <link rel="icon" href="E:\Sona's Folder\project frontend\images\home.png" type="image/icon type">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header> Housify</header>
+
+    <section class="text">
+       <h1>Predicting the Price</h1>
+
+       
+
+
+       <form action="">
+        <div class="form-group form ">
+            <label for="OverallQual" class="form-label"> OverallQual </label> 
+            <input type="text" class="input" placeholder="Quality"><br>
+
+            <label for="year built"> Year built </label> 
+            <input type="text" class="input" placeholder="Year built"><br>
+
+            <label for="Total Bsmt SF">Total Bsmt SF </label> 
+            <input type="text" class="input" placeholder="Total Bsmt SF"><br>
+
+            <label for="1st Flr SF">1st Flr SF </label> 
+            <input type="text" class="input" placeholder="1st Flr SF">
+
+            <label for="Gr Liv Area">Gr Liv Area </label> 
+            <input type="text" class="input" placeholder="Gr Liv Area"><br>
+
+            <label for="Full Bath">Full Bath </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  no. of Bathrooms
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop">no. of Bathrooms</option>
+                  <option value="1">0</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="1">3</option>
+                  
+                </select>
+                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">0</button></li>
+                  <li><button class="dropdown-item" type="button">1</button></li>
+                  <li><button class="dropdown-item" type="button">2</button></li>
+                  <li><button class="dropdown-item" type="button">3</button></li>
+
+                </ul> -->
+              </div>
+            <!-- <input type="text" class="input" placeholder="Full Bath" > -->
+
+            <label for="Full Bath">TotRmsAbvGrd </label> 
+            <input type="text" class="input" placeholder="Full Bath">
+
+            <label for="GarageCars">GarageCars </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  no. of Garage
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop">no. of Garage</option>
+                  <option value="1">0</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="1">3</option>
+                  <option value="1">3</option>
+
+                  
+                </select>
+                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">0</button></li>
+                  <li><button class="dropdown-item" type="button">1</button></li>
+                  <li><button class="dropdown-item" type="button">2</button></li>
+                  <li><button class="dropdown-item" type="button">3</button></li>
+                  <li><button class="dropdown-item" type="button">4</button></li>
+                </ul> -->
+              </div>
+            <!-- <input type="text" class="input" placeholder="GarageCars"> -->
+
+            <label for="GarageArea">GarageArea </label> 
+            <input type="text" class="input" placeholder="GarageArea">
+
+            
+        </div>
+        <div class="form-group form " style="padding: 5rem;">
+            <label for="BSmntFinType1">BSmntFinType1 </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  BsmtType
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop">BsmtType</option>
+                  <option value="1">None</option>
+                  <option value="2">Unf</option>
+                  <option value="3">LWQ</option>
+                  <option value="1">Rec</option>
+                  <option value="2">ALQ</option>
+                  <option value="3">BLQ</option>
+                  <option value="1">GLQ</option>
+                  
+                </select>
+                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">e</button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                </ul> -->
+              </div>
+            <!-- <input type="text" class="input" placeholder="BSmntFinType1"> -->
+
+            <label for=" BSmntFinType2">BSmntFinType2 </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  BsmtType
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop">BsmtType</option>
+                  <option value="1">None</option>
+                  <option value="2">Unf</option>
+                  <option value="3">LWQ</option>
+                  <option value="1">Rec</option>
+                  <option value="2">ALQ</option>
+                  <option value="3">BLQ</option>
+                  <option value="1">GLQ</option>
+                  
+                </select>
+                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">None</button></li>
+                  <li><button class="dropdown-item" type="button">Unf</button></li>
+                  <li><button class="dropdown-item" type="button">LWQ</button></li>
+                  <li><button class="dropdown-item" type="button">Rec</button></li>
+                  <li><button class="dropdown-item" type="button">ALQ</button></li>
+                  <li><button class="dropdown-item" type="button">BLQ</button></li>
+                  <li><button class="dropdown-item" type="button">GLQ</button></li>
+                </ul> -->
+              </div>
+            <!-- <input type="text" class="input" placeholder="BSmntFinType2"> -->
+
+            <label for="MS Zonning">MS Zonning </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop"></option>
+                  <option value="1">RL</option>
+                  <option value="2">RM</option>
+                  <option value="3">FV</option>
+                  <option value="1">RH</option>
+                  <option value="2">C(a11)</option>
+                  
+                </select>
+                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">RL</button></li>
+                  <li><button class="dropdown-item" type="button">RM</button></li>
+                  <li><button class="dropdown-item" type="button">FV</button></li>
+                  <li><button class="dropdown-item" type="button">RH</button></li>
+                  <li><button class="dropdown-item" type="button">C(a11)</button></li>
+                </ul> -->
+              </div>
+            <!-- <input type="text" class="input" placeholder="MS Zonning"> -->
+
+            <label for="Street">Street </label> 
+            <div class="dropdown">
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Street
+                </button> -->
+                <select class="form-select  " aria-label="Default select example">
+                  <option selected class="drop">Street</option>
+                  <option value="1">Grvl</option>
+                  <option value="2">Pave</option>
+                  
+                </select>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Grvl</button></li>
+                  <li><button class="dropdown-item" type="button">Pave</button></li>
+                  
+                </ul>
+              </div>
+            <!-- <input type="text" class="input" placeholder="Street"> -->
+            <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'predict.html';">  Predict</button>
+
+        </div>
+       </form>
+    
+    </section>
+    <div class="btns">
+        <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'index.html';">Home
+        </button>
+        <!-- <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'predict.html';">  Predict</button> -->
+        <button class="btn btn-group btn-outline-dark" onclick="window.location.href = 'instructions1.html';"> Instructions </button>
+    </div>
+
+    <footer>
+        <p>@copyright2023</p>
+    </footer>
+
+</body>
+
+</html>
